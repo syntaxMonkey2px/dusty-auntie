@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
         :root{
-            --color-purple:rgb(83, 25, 141);
-            --color-teal: rgb(0, 150, 136);
-            --color-coral: rgb(255, 87, 34);
-            --color-gold: rgb(255, 215, 0);
+            --color-purple:rgb(29, 5, 52);
+            --color-font: rgb(230, 230, 230);
+            --color-font-2: rgb(74, 219, 241);
+            --color-shadow: rgb(171, 70, 233) ;
             --color-charcoal: rgb(54, 69, 79);
 
         }
@@ -24,10 +24,13 @@
             background-color: var(--color-purple);
             position: relative;
             max-width: 360px;
+            height: 100dvh;
+            display: grid;
+            grid-template-rows: 35% 65%;
         }
 
         #niece{
-            display: block;
+            display: none;
             position: absolute;
             filter: brightness(0.7);
             top: 2%;
@@ -36,15 +39,18 @@
         }
 
         h1{
+            grid-row: 1/2;
             position: relative;
             z-index: 3;
-            font-family: "Pacifico", cursive;;
-            font-size: 4.5em;
+            font-family: "Matemasie", sans-serif;
+            /* font-family: "Pacifico", system-ui; */
+            font-size: 3.5em;
             text-transform: capitalize;
-            color: var(--color-coral);
+            text-align: left;
+            color: var(--color-font-2);
             margin: 0 0 1em 0;
             line-height: 1.5;
-            text-shadow: 0 3px 5px powderblue;
+            text-shadow: 0 3px 5px var(--color-shadow);
         }
 
         .heading{
@@ -55,19 +61,23 @@
         }
 
         p{
+            grid-row: 2/3;
             font-family: "Montserrat", sans-serif;         
-            color: var(--color-gold);
+            color: var(--color-font);
             position: relative;
-            padding: 2em 0 8em 0;
+            padding: 2em .5em 8em .5em;
             font-weight: 200;
-            text-shadow: 0 0px 3px rgb(0, 0, 0);
+            text-shadow: 0 0px 3px var(--color-shadow);
             z-index: 2;
-            height: 50dvh;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 14px;
+            overflow-y: scroll;
+            box-shadow: 0 0 5px 5px var(--color-shadow);
         }
     </style>
     <div class="heading">
-        <img id="niece" src="/IMG_3078.svg" alt="">
-        <h1>happy birthday, auntie</h1>
+        <img id="niece" src="IMG_3078.png" alt="">
+        <h1>"happy birthday, auntie!" 🐈‍⬛</h1>
     </div>
     <p>
         Before I say anything, I have a confession lol I only found your card now as I was writing this and I can’t text you about it now to explain the whole thing lol Was thinking, wait a min, you always send a card when it’s not a direct package from the seller. The pink envelope blended in like red underwear. <br><br>
