@@ -6,57 +6,69 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pacifico&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <style>
+        :root{
+            --color-purple:rgb(83, 25, 141);
+            --color-teal: rgb(0, 150, 136);
+            --color-coral: rgb(255, 87, 34);
+            --color-gold: rgb(255, 215, 0);
+            --color-charcoal: rgb(54, 69, 79);
+
+        }
+
         body{
-            /* width: 100vw; */
             padding: 1em;
-            background-color: rebeccapurple;
+            background-color: var(--color-purple);
             position: relative;
-            /* overflow-x: hidden; */
+            max-width: 360px;
         }
 
         #niece{
             display: block;
             position: absolute;
             filter: brightness(0.7);
-            top: 20%;
+            top: 2%;
             z-index: 1;
 
         }
 
         h1{
-            font-family: "Permanent Marker", cursive;    
-            /* font-family: "Pacifico", cursive;; */
+            position: relative;
             z-index: 3;
-            background-color: rebeccapurple;
+            font-family: "Pacifico", cursive;;
             font-size: 4.5em;
             text-transform: capitalize;
-            color: #0e031c;
-            margin: 0;
-            line-height: 1.25;
+            color: var(--color-coral);
+            margin: 0 0 1em 0;
+            line-height: 1.5;
             text-shadow: 0 3px 5px powderblue;
+        }
+
+        .heading{
             display: block;
             position: sticky;
             top: 0;
+            height: 30%;
         }
 
         p{
-            font-family: "Pacifico", cursive;;
-
-            /* font-family: "Permanent Marker", cursive;*/
-            
-            color:#d5faf4;
+            font-family: "Montserrat", sans-serif;         
+            color: var(--color-gold);
             position: relative;
             padding: 2em 0 8em 0;
-            text-shadow: 0 0 3px rgb(19, 18, 18);
+            font-weight: 200;
+            text-shadow: 0 0px 3px rgb(0, 0, 0);
             z-index: 2;
+            height: 50dvh;
         }
     </style>
-    <img id="niece" src="/IMG_3078.png" alt="">
-    <h1>happy birthday, auntie</h1>
+    <div class="heading">
+        <img id="niece" src="/IMG_3078.svg" alt="">
+        <h1>happy birthday, auntie</h1>
+    </div>
     <p>
         Before I say anything, I have a confession lol I only found your card now as I was writing this and I can’t text you about it now to explain the whole thing lol Was thinking, wait a min, you always send a card when it’s not a direct package from the seller. The pink envelope blended in like red underwear. <br><br>
         And awwww, I am so grateful for you in my life, you are much much greater of a supporting person than you might think. I haven’t made a proper birthday wish, but one of them at the back of my head would be to catch up with you in person soon as possible. We never really met up that much and it still feels way overdue for some reason. <br><br>
