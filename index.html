@@ -9,25 +9,33 @@
 <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <style>
+    <!-- <script>
+        const password = prompt("Enter the password:");
+        if (password !== "niggy") {
+            document.body.style.visibility = "hidden";
+        }
+    </script> -->
+    
+     <style>
         :root{
             --color-purple:rgb(29, 5, 52);
             --color-font: rgb(230, 230, 230);
-            --color-font-2: rgb(105, 220, 238);
-            --color-shadow: rgb(171, 70, 233) ;
-            --color-charcoal: rgb(54, 69, 79);
+            --color-font-2: rgb(233, 246, 248);
+            --color-shadow: rgb(81, 18, 81) ;
+            --color-charcoal: rgb(58, 0, 48);
 
         }
 
         body{
             padding: 1em;
-            background-color: var(--color-purple);
+            background-color: var(--color-charcoal);
             position: relative;
             max-width: 360px;
+            overflow-x: hidden;
             height: 95dvh;
             display: grid;
             grid-template-rows: 35% 65%;
-            gap: 1em;
+            gap: 0.5em; /* reduced gap between elements */
         }
 
         #niece{
@@ -45,12 +53,12 @@
             z-index: 3;
             font-family: "Matemasie", sans-serif;
             /* font-family: "Pacifico", system-ui; */
-            font-size: 3.5em;
+            font-size: 3.2em;
             text-transform: capitalize;
             text-align: left;
             color: var(--color-font-2);
-            margin: 0 0 1em 0;
-            line-height: 1.5;
+            margin: 0;
+            line-height: 1.2; /* reduced line height */
             text-shadow: 0 3px 5px var(--color-shadow);
         }
 
@@ -66,29 +74,61 @@
             font-family: "Montserrat", sans-serif;         
             color: var(--color-font);
             position: relative;
-            margin: .5em;
-            padding: 2em .5em 8em .5em;
+            margin: 0; /* removed margin */
+            padding: 1em; /* reduced padding */
             font-weight: 200;
             text-shadow: 0 0px 3px var(--color-shadow);
             z-index: 2;
             background-color: rgba(255, 255, 255, 0.1);
             border-radius: 14px;
-            overflow-y: scroll;
+            overflow-y: auto;
             box-shadow: 2px 2px 10px 2px var(--color-shadow);
+            border: 1px solid var(--color-shadow); /* added border */
+        }
+
+        .bubble {
+            position: absolute;
+            top: 30px; /* adjust the top value to position the bubble */
+            right: 2px; /* adjust the right value to position the bubble */
+            z-index: 10; /* make sure the bubble is on top of other elements */
+            width: 8em; /* adjust the width and height to your liking */
+            height: 12em;
+            border-radius: 0%; /* make the bubble round */
+            background-color: #ffffff00;/* add a background color to the bubble */
+            padding: 1px; /* add some padding to the bubble */
+            display: flex; /* make the image centered */
+            justify-content: center;
+            align-items: center;
+            }
+
+        .bubble img {
+            width: 100%; /* adjust the image width to your liking */
+            height: 100%;
+            object-fit: contain; /* make sure the image is fully covered */
+        }
+
+        @media (min-width:500px){
+            body{
+                margin-inline: auto;
+            }
+
         }
     </style>
+    <div class="bubble">
+        <img src="IMG_3078.PNG" alt="Bubble Image">
+      </div>
     <div class="heading">
         <img id="niece" src="IMG_3078.png" alt="">
-        <h1>"happy birthday, auntie!" 🐈‍⬛</h1>
+        <h1>"happy birthday, auntie!"</h1>
     </div>
     <p>
         Before I say anything, I have a confession lol I only found your card now as I was writing this and I can’t text you about it now to explain the whole thing lol Was thinking, wait a min, you always send a card when it’s not a direct package from the seller. The pink envelope blended in like red underwear. <br><br>
         And awwww, I am so grateful for you in my life, you are much much greater of a supporting person than you might think. I haven’t made a proper birthday wish, but one of them at the back of my head would be to catch up with you in person soon as possible. We never really met up that much and it still feels way overdue for some reason. <br><br>
         I dunno what page we are on in Jodi’s dating saga by the time you receive this lol I can only say, good luck on whatever page that you’re on this week lol On the bright side, you are dealing with everything without the puberty hormones! But seriously, I am happy and excited for you discovering the whole new and different sides of yourself. The journey aint the easiest. It takes time but you are strong and you are handling the best you can. And I know that when you finally understand yourself better and find your pace, you’ll be unstoppable. It will then all be sweet and sound and you’ll be in your own version of Disney one day (but hopefully like next year). <br><br>
-        You reminded me of this line in GoT, Sansa Stark said, “I learn slow, but I learned.” before she killed the person who was using her as a power puppet for years. <br><br>
-        I wanted to write you a card by hand with the gift but thinking about the UK/AU plug compatibility, it’s better that I sent it from an AU seller. Hopefully you haven’t got one yet. And you can take it anywhere you go with the travel case. <br><br><br>
+        You remind me of this line in GoT, Sansa Stark said, “I learn slow, but I learned.” before she killed the person who was using her as a power puppet half of her life. <br><br>
+        I wanted to write you a card by hand with the gift but thinking about the UK/AU plug compatibility, it’s better that I sent it from an AU seller. Hope you haven’t got one yet. And you can take it anywhere you go with the travel case. <br><br><br>
         
-        <italic>Platonic Non-gay Love</italic><br>
+        <i>Platonic Non-gay Love</i><br>
         alicia 2024
     </p>
 </body>
