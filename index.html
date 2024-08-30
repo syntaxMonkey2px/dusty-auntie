@@ -9,12 +9,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- <script>
+    <script>
         const password = prompt("Enter the password:");
         if (password !== "niggy") {
             document.body.style.visibility = "hidden";
         }
-    </script> -->
+    </script>
     
      <style>
         :root{
@@ -38,15 +38,6 @@
             gap: 0.5em; /* reduced gap between elements */
         }
 
-        #niece{
-            display: none;
-            position: absolute;
-            filter: brightness(0.7);
-            top: 2%;
-            z-index: 1;
-
-        }
-
         h1{
             grid-row: 1/2;
             position: relative;
@@ -54,7 +45,7 @@
             font-family: "Matemasie", sans-serif;
             /* font-family: "Pacifico", system-ui; */
             font-size: 3.2em;
-            text-transform: capitalize;
+            text-transform: uppercase;
             text-align: left;
             color: var(--color-font-2);
             margin: 0;
@@ -63,7 +54,8 @@
         }
 
         .heading{
-            display: block;
+            display: grid;
+            place-items: center;
             position: sticky;
             top: 0;
             height: 30%;
@@ -99,11 +91,13 @@
             display: flex; /* make the image centered */
             justify-content: center;
             align-items: center;
+            z-index: 0;
+
             }
 
         .bubble img {
-            width: 100%; /* adjust the image width to your liking */
-            height: 100%;
+            width: 170%; /* adjust the image width to your liking */
+            height: 170%;
             object-fit: contain; /* make sure the image is fully covered */
         }
 
@@ -118,8 +112,7 @@
         <img src="IMG_3078.PNG" alt="Bubble Image">
       </div>
     <div class="heading">
-        <img id="niece" src="IMG_3078.png" alt="">
-        <h1>"happy birthday, auntie!"</h1>
+        <h1>happy birthday, auntie!</h1>
     </div>
     <p>
         Before I say anything, I have a confession lol I only found your card now as I was writing this and I can’t text you about it now to explain the whole thing lol Was thinking, wait a min, you always send a card when it’s not a direct package from the seller. The pink envelope blended in like red underwear. <br><br>
