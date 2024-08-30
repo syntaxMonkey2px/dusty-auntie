@@ -14,6 +14,16 @@
         if (password !== "niggy") {
             document.body.style.visibility = "hidden";
         }
+
+        const pElement = document.querySelector('p');
+
+        pElement.addEventListener('scroll', () => {
+        if (pElement.scrollTop + pElement.offsetHeight >= pElement.scrollHeight) {
+            pElement.dataset.scrolledToBottom = true;
+        } else {
+            pElement.dataset.scrolledToBottom = false;
+        }
+        });
     </script>
     
      <style>
@@ -32,7 +42,7 @@
             position: relative;
             max-width: 360px;
             overflow-x: hidden;
-            height: 95dvh;
+            height: 100vh;
             display: grid;
             grid-template-rows: 35% 65%;
             gap: 0.5em; /* reduced gap between elements */
@@ -101,6 +111,36 @@
             object-fit: contain; /* make sure the image is fully covered */
         }
 
+        .scroll-down-arrow {
+  position: fixed;
+  display: gird;
+  place-items: center;
+  bottom: 15px; /* adjust the bottom value to your liking */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  background-color: #0a0a0a88;
+  padding: .5em .7em;
+  border-radius: 50%;
+  color: #ccc;
+  opacity: 1;
+  transition: opacity 0.3s;
+  z-index: 1; /* add a z-index to ensure the arrow is on top of the content */
+}
+
+.scroll-down-arrow::before {
+  content: "\25BC"; /* Unicode character for a downward arrow */
+  font-weight: bold;
+}
+
+p:hover .scroll-down-arrow {
+  opacity: 0; /* hide the arrow on hover */
+}
+
+p[data-scrolled-to-bottom] .scroll-down-arrow {
+  opacity: 0; /* hide the arrow when scrolled to bottom */
+}
+
         @media (min-width:500px){
             body{
                 margin-inline: auto;
@@ -123,6 +163,7 @@
         
         <i>Platonic Non-gay Love</i><br>
         alicia 2024
+        <span class="scroll-down-arrow"></span>
     </p>
 </body>
 </html>
