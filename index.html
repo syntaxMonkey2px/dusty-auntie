@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Matemasie&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <script>
@@ -33,10 +34,11 @@
         }
 
         body{
-            padding: 1em;
+            box-sizing: border-box;
+            padding: 2px;
             background-color: var(--color-charcoal);
             position: relative;
-            width: 90lvw;
+            width: 100%;
             margin-inline: auto;
             max-width: 360px;
             overflow-x: hidden;
@@ -48,16 +50,18 @@
 
         h1{
             position: relative;
+            padding: 5px;
             z-index: 3;
-            font-family: "Matemasie", sans-serif;
-            /* font-family: "Pacifico", system-ui; */
-            font-size: 3.3em;
+            font-family: "Nerko One", cursive, system-ui, sans-serif;
+            font-size: 4em;
+            padding-left: .4em;
+            font-weight: 600;
             text-transform: uppercase;
             text-align: left;
             color: var(--color-font-2);
             margin: 0;
             line-height: 1.2; /* reduced line height */
-            text-shadow: 0 3px 5px var(--color-teal);
+            text-shadow: 0 3px 8px var(--color-teal);
         }
 
         .heading{
@@ -107,8 +111,9 @@
             width: 170%; /* adjust the image width to your liking */
             height: 150%;
             object-fit: contain; /* make sure the image is fully covered */
-            filter: brightness(0.8);
+            filter:contrast(1.2)
         }
+
 
         .scroll-down-arrow {
             position: fixed;
